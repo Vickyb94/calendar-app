@@ -1,43 +1,44 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  line-height: 1;
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: purple;
+  border-left: 1px solid rgb(78, 20, 59);
   padding: 10px;
 }
 
-.description {
+/*.description {
   white-space: pre-wrap;
-}
+}*/
 
 .time-block {
   border-radius: 15px;
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 1px solid purple;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: rgb(150, 52, 150);
+  color: whitesmoke;
+  border-top: 1px dashed rgb(241, 122, 241);
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: whitesmoke;
+  color: whitesmoke;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: yellow;
+  color: whitesmoke;
 }
 
 .future {
