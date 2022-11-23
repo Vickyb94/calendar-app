@@ -11,23 +11,23 @@ $(document).ready(function () {
     //to store the plan in the local storage,
     localStorage.setItem(text, time);
   });
+  //TODO: Add code to apply the past, present, or future class to each time
+  // block by comparing the id to the current hour. HINTS: How can the id
+  // attribute of each time-block be used to conditionally add or remove the
+  // past, present, and future classes? How can Day.js be used to get the
+  // current hour in 24-hour time?
+
   //getting saved data from local storage; it helps to use id to save the data so it makes it easier to load
-  //$("#9 .plan").val(localStorage.getItem("9"));
-  //$("#10 .plan").val(localStorage.getItem("10"));
-  //$("#11 .plan").val(localStorage.getItem("11"));
-  //$("#12 .plan").val(localStorage.getItem("12"));
-  //$("#1 .plan").val(localStorage.getItem("1"));
-  //$("#2 .plan").val(localStorage.getItem("2"));
-  //$("#3 .plan").val(localStorage.getItem("3"));
-  //$("#4 .plan").val(localStorage.getItem("4"));
-  //$("#5 .plan").val(localStorage.getItem("5"));
+  $("#9 .plan").val(localStorage.getItem("9"));
+  $("#10 .plan").val(localStorage.getItem("10"));
+  $("#11 .plan").val(localStorage.getItem("11"));
+  $("#12 .plan").val(localStorage.getItem("12"));
+  $("#1 .plan").val(localStorage.getItem("1"));
+  $("#2 .plan").val(localStorage.getItem("2"));
+  $("#3 .plan").val(localStorage.getItem("3"));
+  $("#4 .plan").val(localStorage.getItem("4"));
+  $("#5 .plan").val(localStorage.getItem("5"));
 
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-
-  //
- 
   //display current date and time in the header of the page
   $("#currentDay").text(moment().format('dddd MMMM DD YYYY h:mm:ss a'));
 });
