@@ -19,9 +19,23 @@ $(document).ready(function () {
     
    //set function to get present time now
   function timeBlock() {
-      var timeNow = moment().hour();
+      var time = moment().hour();
     }
-    
+    $(".time-block").each(function() {
+      var currentTime = parseInt($(this).attr("id"));
+      console.log( currentTime, time)
+      //created a for loop to loop over the time blocks
+      //if time is less than currentTime, then it is in the past 
+      if ( time < currentTime) {
+        $(this).addClass("past");
+      //if time is strictly equal to current time, then it is the present
+    } else if ( time === currentTime) {
+        $(this).addClass("present");
+    } else {
+        $(this).addClass("future");
+    }
+  });
+  
 
   //getting saved data from local storage; it helps to use id to save the data so it makes it easier to load
   $("#9 .plan").val(localStorage.getItem("9"));
