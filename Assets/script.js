@@ -16,6 +16,12 @@ $(document).ready(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+    
+   //set function to get present time now
+  function timeBlock() {
+      var timeNow = moment().hour();
+    }
+    
 
   //getting saved data from local storage; it helps to use id to save the data so it makes it easier to load
   $("#9 .plan").val(localStorage.getItem("9"));
