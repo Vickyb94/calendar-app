@@ -10,7 +10,7 @@ N/A
 The user uses the daily planner to create a schedule and the current date and time is displayed when the planner is opened. The user is presented with time blocks for standard business hours when he scrolls down and user is able to view time blocks for that day. User can enter an even when time block is clicked. The user is able to save the text in the local storage and the event remains even when page is refreshed.
 
 ![alt text](/Assets/Screenshot%202022-11-24%20212213.png)
-DEployed Webpage URL :
+DEployed Webpage URL: https://vickyb94.github.io/cw5-calendar-app/
 
 ## Credits
 
