@@ -14,15 +14,15 @@ $(document).ready(function () {
       localStorage.setItem(time, plan);
   })
   //  //getting saved data from local storage; it helps to use id to save the data so it makes it easier to load
-      $("#9 .plan").val(localStorage.getItem("9"));
-      $("#10 .plan").val(localStorage.getItem("10"));
-      $("#11 .plan").val(localStorage.getItem("11"));
-      $("#12 .plan").val(localStorage.getItem("12"));
-      $("#1 .plan").val(localStorage.getItem("1"));
-      $("#2 .plan").val(localStorage.getItem("2"));
-      $("#3 .plan").val(localStorage.getItem("3"));
-      $("#4 .plan").val(localStorage.getItem("4"));
-      $("#5 .plan").val(localStorage.getItem("5"));
+      $("#hour9 .plan").val(localStorage.getItem("hour9"));
+      $("#hour10 .plan").val(localStorage.getItem("hour10"));
+      $("#hour11 .plan").val(localStorage.getItem("hour11"));
+      $("#hour12 .plan").val(localStorage.getItem("hour12"));
+      $("#hour13 .plan").val(localStorage.getItem("hour13"));
+      $("#hour14 .plan").val(localStorage.getItem("hour14"));
+      $("#hour15 .plan").val(localStorage.getItem("hour15"));
+      $("#hour16 .plan").val(localStorage.getItem("hour16"));
+      $("#hour17 .plan").val(localStorage.getItem("hour17"));
 
 
  //created a function to give current time when called
@@ -37,11 +37,10 @@ $(document).ready(function () {
           if (hour < timeNow) {
               $(this).addClass("past");
           }
-
+          
           else if ( hour === timeNow) {
               $(this).addClass("present");
           }
-          
           else {
               $(this).addClass("future");
           }
